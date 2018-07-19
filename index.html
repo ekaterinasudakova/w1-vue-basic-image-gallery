@@ -12,12 +12,16 @@
 		
 	</head>
 	<body>
-		<div id="app">
-			<li v-for="item in items">
-				<img v-bind:src="item.src">
-				{{ item.title }}
-			</li>
+		<div class="wrapper">
+			<h1>Vue Gallery</h1>
+			<div id="app" class="grid">
+				<div v-for="item in items">
+					<img v-bind:src="item.src" class="item" style="width:100%;">
+					{{ item.title }}
+				</div>
+			</div>
 		</div>
+		
 
 
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
